@@ -1,0 +1,10 @@
+# Ignore package manager directories
+/node_modules/
+/packages/
+
+# Ignore dontinclude folder
+/dontinclude/
+
+# Ignore .vs folder
+/dontinclude/Scripts/_references.js
+

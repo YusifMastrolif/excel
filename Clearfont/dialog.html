@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup Dialog</title>
+    <style>
+        /* Style for the popup dialog */
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(34, 31, 31, 0.135);
+            border: 1px solid #282828;
+            box-shadow: 0 2px 4px rgba(34, 31, 31, 0.429);
+        }
+        /* Style for the close button */
+        .popup button {
+            padding: 5px 10px;
+            background-color: #217346; /* Green color */
+            color: white;
+            border: 1px solid #282828;
+            cursor: pointer;
+            
+        }
+
+        .green-box {
+            width: 340px;
+            height: 25px;
+            background-color: #217346; /* Green color */
+            border: 1px solid #00FF00;
+            border: 1px solid #282828;
+            position: fixed;
+            top: 0px;
+            right: -1px;
+            z-index: -1;
+        }
+
+        .popup #XButton:hover {
+            background-color: #217346; /* Green color */
+            color: white;
+            border: 1px solid #282828;
+            cursor: pointer;
+            padding: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <h2>Popup Dialog</h2>
+        <p>This is a popup dialog.</p>
+        <div class="green-box"></div> <!-- Add the green box element -->
+
+        <button id="Xbutton"onclick="closePopup()">X</button>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        function closePopup() {
+            // Code to close the popup dialog
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
